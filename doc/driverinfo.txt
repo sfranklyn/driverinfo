@@ -1,0 +1,45 @@
+Driver Info
+===========
+Samuel Franklyn <sfranklyn@gmail.com>
+v1.0, 2014-03-27
+
+
+Cara kerja program
+------------------
+Sesudah program dijalankan maka user harus mengisi 4 field:
+
+1. System: Nama DNS atau ip address AS/400.
+2. Database: Nama database/library di AS/400.
+3. User: Nama user.
+4. Password: Password dari user. 
+
+Jika data yang diisi benar maka layar berikut akan ditampilkan. 
+Jika salah maka akan ada pesan kesalahan.
+
+Layar ini akan menerima input field Nomor. Sesudah field nomor diisi maka 
+tekan kunci enter. Jika field Nomor terdaftar dalam 
+tabel MASPENG dalam database/library maka infonya akan ditampilkan.
+Kalau field Nomor tidak ada dalam tabel maka akan ditampilkan pesan kesalahan. 
+
+Sesudah menampilkan info dari tabel MASPENG maka akan dibuka file image yang 
+lokasinya di direktori "images". File image yang namanya sama dengan 
+field Nomor yang diinput di layar dan berakhiran .jpg akan dibuka dan 
+ditampilkan dengan ukuran 1/4 dari ukuran image.
+
+Kalau field Nomor ada dalam tabel akan tetapi tidak ada file image dengan 
+nama images/Nomor.jpg maka hanya akan ditampilkan info dari tabel. 
+
+
+Cara menjalankan program
+------------------------
+Install Java SDK versi 7. Untuk menjalankan jar jalankan perintah berikut 
+dalam direktori driverinfo:
+
+--------------------------------------
+$ java -jar target/driverinfo-1.0.jar
+--------------------------------------
+
+Sudah disediakan file command driverinfo.cmd dalam direktori driverinfo 
+untuk menjalankan program yang berisi perintah diatas dan bisa dijalankan 
+dengan double click dari dalam Windows Explorer.
+

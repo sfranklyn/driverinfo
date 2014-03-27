@@ -1,0 +1,1 @@
+java -jar target\driverinfo-1.0.jar
