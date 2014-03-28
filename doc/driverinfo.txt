@@ -27,13 +27,37 @@ field Nomor yang diinput di layar dan berakhiran .jpg akan dibuka dan
 ditampilkan dengan ukuran 1/4 dari ukuran image.
 
 Kalau field Nomor ada dalam tabel akan tetapi tidak ada file image dengan 
-nama images/Nomor.jpg maka hanya akan ditampilkan info dari tabel. 
+nama images/Nomor.jpg maka hanya akan ditampilkan info dari tabel.
+
+
+Cara mendownload source program
+-------------------------------
+Pasang Git. Download dari http://git-scm.com/downloads
+
+Jalankan perintah berikut di command line:
+
+-------------------------------------------------------
+$ git clone https://github.com/sfranklyn/driverinfo.git
+-------------------------------------------------------
+
+
+Cara melakukan kompilasi
+------------------------
+Pasang Java SDK versi 7. Download dari 
+http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
+
+Pasang Maven. Download dari http://maven.apache.org/download.cgi
+
+Untuk membuat jar program jalankan perintah berikut dalam direktori driverinfo:
+
+-------------------------------
+$ mvn clean package -DskipTests
+-------------------------------
 
 
 Cara menjalankan program
 ------------------------
-Install Java SDK versi 7. Untuk menjalankan jar jalankan perintah berikut 
-dalam direktori driverinfo:
+Untuk menjalankan jar jalankan perintah berikut dalam direktori driverinfo:
 
 --------------------------------------
 $ java -jar target/driverinfo-1.0.jar
