@@ -88,7 +88,7 @@ public class LogInForm extends JFrame {
 
     private void buttonOkAction(ActionEvent evt) {
         con = logIn.logIn(textSystem.getText(), textDatabase.getText(),
-                textUser.getText(), textPassword.getText());
+                textUser.getText(), new String(textPassword.getPassword()));
         if (con == null) {
             JOptionPane.showMessageDialog(null, logIn.getMessage());
             return;
